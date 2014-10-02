@@ -65,7 +65,9 @@ function toggleChatWindow() {
 
 $(document).ready(function() {
   //setup "global" variables first
-  var socket = io.connect("127.0.0.1:3000");
+  // var socket = io.connect("127.0.0.1:3000");
+  // TODO: change it to your server address.
+  var socket = io.connect("http://ilivebox.herokuapp.com/");
   var myRoomID = null;
 
   $("form").submit(function(event) {
